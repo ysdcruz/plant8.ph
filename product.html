@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!-- Developers: Dela Cruz, Ysabel S. -->
+<!--             Villar, Ron-Arvil B. -->
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Plant 8 | Ribbon Plant - Indoor or Outdoor Plant</title>
+			<link rel="shortcut icon" type="image/x-icon" href="images/content/favicon.ico">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Rancho&amp;family=Merriweather+Sans:wght@300;400&amp;family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet">
+		<link href="css/page.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/page-style.js"></script>
+	</head>
+	<body>
+		<div id="body-wrapper">
+			<div id="promo-banner">
+				<p id="promo-content">WE ONLY ACCEPT ORDERS IN METRO MANILA<a href="shop.html">Shop Now</a></p>
+			</div>
+			<header id="header-menu">
+				<div class="bg"></div>
+				<div id="left-item">
+					<span id="nav-icon" style="color: white;">&#9776;</span>
+					<a href="index.html"><img id="logo-container" src="images/content/logo2.png" alt="Plant 8"></a>
+					<a id="logo-name" class="title-shadow" href="index.html">Plant 8</a>
+				</div>
+				<div id="center-item" class="sidebar small-side left-origin">
+					<span id="left-close" class="close-icon">×</span>
+					<ul id="page-navigation" class="navigation">
+						<li><a href="index.html" class="nav-link shadow">HOME</a></li>
+						<li><a href="shop.html" class="nav-link shadow"><span id="current">SHOP</span></a></li>
+						<li><a href="about.html" class="nav-link shadow">ABOUT US</a></li>
+					</ul>
+				</div>
+				<div id="right-item">
+					<div id="right-sidebar" class="sidebar small-side right-origin">
+						<span id="right-close" class="close-icon">×</span>
+						<ul id="user-settings" class="navigation">
+							<a href="orders.html"><li id="history">Orders</li></a>
+							<a href="settings.html"><li id="settings">Settings</li></a>
+							<a href="#"><li id="log-out">Log Out</li></a>
+						</ul>
+					</div>
+					<div id="user-icon" class="icon">
+						<img src="images/users/1.jpg" alt="Ysabel Dela Cruz">
+					</div>
+					<div>
+						<img id="cart-icon" class="icon" src="images/cart.png" data-toggle="modal" data-target="#cart-modal" alt="Cart">
+						<span id="cart-count">2</span>
+					</div>
+				</div>
+				<div id="cart-modal" class="modal" aria-hidden="true">
+					<div class="modal-content">
+						<div class="modal-body">
+							<span class="X" data-dismiss="modal">&times;</span>
+							<h2>Your Cart</h2>
+							<hr class="horizontal">
+							<div id="cart-empty">
+							<p>Oops. Looks like your cart is empty.</p>
+							<button id="shop-redirect" class="redirect">Shop Now</button>
+						</div>
+						<div id="cart-items">
+							<div class="modal-field">
+								<div>
+									<input type="checkbox" id="select-all" class="ord-checkbox">
+									<span class="checkmark cart-checkmark"></span>
+								</div>
+								<div>
+									<button id="delete-cart" class="btn-red btn-disabled" data-cust_id="1"><i class="fa fa-trash"></i>Delete</button>
+								</div>
+							</div>
+							<hr class="horizontal">
+							<div id="ord-all">
+								<div class="modal-field">
+									<div class="ord-product">
+										<input type="checkbox" class="ord-checkbox" data-cart_id="442">
+										<span class="checkmark cart-checkmark"></span>
+										<div class="ord-image">
+											<img src="images/products/Broadleaf_Palm_Lily_with_Pot_-_Indoor_Plant/Broadleaf_Palm_Lily_with_Pot_-_Indoor_Plant.jpg">
+										</div>
+										<div class="ord-summary">
+											<div class="ord-desc">
+												<p class="ord-name">Broadleaf Palm Lily with Pot - Indoor Plant</p>
+												<p class="ord-price">₱ 270.00</p>
+												<div class="qty-set">
+													<div class="qty-minus unselectable" data-cust_id="1" data-cart_id="442" data-prod_id="3" data-prod_price="270.00">-</div>
+													<div class="qty-value">1</div>
+													<div class="qty-add unselectable" data-maxqty="983" data-cart_id="442" data-prod_id="3" data-prod_price="270.00">+</div>
+												</div>
+												<div class="qty-avail">983 pieces left</div>
+											</div>
+											<p class="ord-sub-price">₱ 270.00</p>
+										</div>
+									</div>
+									<hr class="horizontal">
+								</div>
+								<div class="modal-field">
+									<div class="ord-product">
+										<input type="checkbox" class="ord-checkbox" data-cart_id="441">
+										<span class="checkmark cart-checkmark"></span>
+										<div class="ord-image">
+											<img src="images/products/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant.jpg">
+										</div>
+										<div class="ord-summary">
+											<div class="ord-desc">
+												<p class="ord-name">San Flores Plant with pot (Indoor or Outdoor) Accent Plant</p>
+												<p class="ord-price">₱ 350.00</p>
+												<div class="qty-set">
+													<div class="qty-minus unselectable" data-cust_id="1" data-cart_id="441" data-prod_id="1" data-prod_price="350.00">-</div>
+													<div class="qty-value">1</div>
+													<div class="qty-add unselectable" data-maxqty="941" data-cart_id="441" data-prod_id="1" data-prod_price="350.00">+</div>
+												</div>
+												<div class="qty-avail">941 pieces left</div>
+											</div>
+											<p class="ord-sub-price">₱ 350.00</p>
+										</div>
+									</div>
+									<hr class="horizontal">
+								</div>
+							</div>
+							<div id="modal-total" class="modal-field">
+								<p><span id="ord-total-qty">2 items</span>, Total: ₱ <span id="ord-total-price">620.00</span></p>
+							</div>
+							<div id="checkout-field" class="modal-field">
+								<button id="checkout-cart" class="btn-green btn-disabled"><i class="fa fa-shopping-basket"></i>Checkout</button>
+							</div>
+							<h4>You may like:</h4>
+							<div id="cart-recommend">
+								<a href="product.html?ID=2&amp;prod=sea+orache (indoor or outdoor plant)">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/Sea_Orache_(Indoor_or_Outdoor_Plant)/Sea_Orache_(Indoor_or_Outdoor_Plant).jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>Sea Orache (Indoor or Outdoor Plant)</p>
+											</div>
+											<p class="recom-price">₱ 250.00</p>
+										</div>
+									</div>
+								</a>
+								<a href="product.html?ID=1&amp;prod=san+flores plant with pot (indoor or outdoor) accent plant">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant.jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>San Flores Plant with pot (Indoor or Outdoor) Accent Plant</p>
+											</div>
+											<p class="recom-price">₱ 350.00</p>
+										</div>
+									</div>
+								</a>
+								<a href="product.html?ID=49&amp;prod=2+pcs ceramic pots for your plants">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/2_pcs_Cermic_Pots_for_your_plants/2_pcs_Cermic_Pots_for_your_plants.jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>2 pcs Ceramic Pots for your plants</p>
+											</div>
+											<p class="recom-price">₱ 250.00</p>
+										</div>
+									</div>
+								</a>
+								<a href="product.html?ID=59&amp;prod=fernwood+sanseviera - indoor plant">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/Fernwood_Sanseviera_-_Indoor_Plant/Fernwood_Sanseviera_-_Indoor_Plant.jpg"></div>
+											<div class="recom-info">
+												<div class="recom-name">
+													<p>Fernwood Sanseviera - Indoor Plant</p>
+												</div>
+												<p class="recom-price">₱ 85.00</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="cart-notif" class="modal">
+					<div class="modal-content">
+						<div class="modal-body">
+							<span id="notif-close" class="X" data-dismiss="modal">&times;</span>
+							<h2>Added to cart successfully</h2>
+							<hr class="horizontal">
+							<div>
+							<div class="modal-field">
+								<div id="cart-product">
+									<div id="item-image">
+										<img src="images/products/Ribbon_Plant_-_Indoor_or_Outdoor_Plant/Ribbon_Plant_-_Indoor_or_Outdoor_Plant.jpg">
+									</div>
+									<div id="item-summary">
+										<div id="item-desc">
+											<p id="item-name">Ribbon Plant - Indoor or Outdoor Plant</p>
+											<p id="item-price">₱ <span>600.00</span></p>
+											<div id="item-qty">X <span>1</span></div>
+										</div>
+										<p id="item-tot-price">₱ <span>600.00</span></p>
+										<div id="cart-notif-checkout">
+											<button id="checkout-now" class="btn-green" data-cart_id="445"><i class="fa fa-shopping-basket"></i>Checkout</button>
+										</div>
+									</div>
+								</div>
+								<hr class="horizontal"></div>
+							</div>
+							<h4>You may like:</h4>
+							<div id="cart-recommend1">
+								<a href="product.html?ID=2&amp;prod=sea+orache (indoor or outdoor plant)">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/Sea_Orache_(Indoor_or_Outdoor_Plant)/Sea_Orache_(Indoor_or_Outdoor_Plant).jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>Sea Orache (Indoor or Outdoor Plant)</p>
+											</div>
+											<p class="recom-price">₱ 250.00</p>
+										</div>
+									</div>
+								</a>
+								<a href="product.html?ID=1&amp;prod=san+flores plant with pot (indoor or outdoor) accent plant">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant.jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>San Flores Plant with pot (Indoor or Outdoor) Accent Plant</p>
+											</div>
+											<p class="recom-price">₱ 350.00</p>
+										</div>
+									</div>
+								</a>
+								<a href="product.html?ID=36&amp;prod=4+pcs aesthetic dish ceramic pot">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/4_pcs_Aesthetic_Dish_Ceramic_Pot/4_pcs_Aesthetic_Dish_Ceramic_Pot.jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>4 pcs Aesthetic Dish Ceramic Pot</p>
+											</div>
+											<p class="recom-price">₱ 399.00</p>
+										</div>
+									</div>
+								</a>
+								<a href="product.html?ID=41&amp;prod=air+plant - indoor plant">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/Air_Plant_-_Indoor_Plant/Air_Plant_-_Indoor_Plant.jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>Air Plant - Indoor Plant</p>
+											</div>
+											<p class="recom-price">₱ 300.00</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="load-modal" class="modal" data-backdrop="static" data-keyboard="false">
+					<div class="loader"></div>
+				</div>
+			</header>
+			<div id="main" class="no-banner">
+				<div class="inner">
+					<div id="product-path">
+						<a href="shop.html" id="shop-link">Shop</a>
+						<span>❯</span>
+						<span id="path-product">Ribbon Plant - Indoor or Outdoor Plant</span>
+					</div>
+					<input type="hidden" name="prod-ID" id="prod-ID" value="10">
+					<div id="product-details">
+						<div id="image-details">
+							<div id="focus-image">
+								<img id="focus-img" src="images/products/Ribbon_Plant_-_Indoor_or_Outdoor_Plant/Ribbon_Plant_-_Indoor_or_Outdoor_Plant.jpg" alt="Ribbon Plant - Indoor or Outdoor Plant">
+							</div>
+							<div id="all-images">
+								<div class="min-image">
+									<img class="min-img" src="images/products/Ribbon_Plant_-_Indoor_or_Outdoor_Plant/Ribbon_Plant_-_Indoor_or_Outdoor_Plant.jpg" alt="Ribbon Plant - Indoor or Outdoor Plant">
+								</div>
+						</div>
+						</div>
+						<div id="text-details">
+							<h2>Ribbon Plant - Indoor or Outdoor Plant</h2>
+							<div id="product-history">
+								<div>
+									<span id="rating-link" class="history-link">0.0</span>
+									<span id="cur-rating">
+										<i class="fa fa-star-o"></i>
+										<i class="fa fa-star-o"></i>
+										<i class="fa fa-star-o"></i>
+										<i class="fa fa-star-o"></i>
+										<i class="fa fa-star-o"></i>
+									</span>
+								</div>
+								<div>
+									<span id="review-link" class="history-link">0</span>
+									<span>Ratings</span>
+								</div>
+								<div>
+									<span>12</span>
+									<span>Sold</span>
+								</div>
+							</div>
+							<span id="text-price">₱ 600.00</span>
+							<hr class="horizontal">
+							<div id="text-description">Package inclusions:<br />> Plant (Uprooted)<br />> Pot
+								<p id="no-cancel">Strictly no cancellation of orders.</p>
+							</div>
+							<hr class="horizontal">
+							<div id="ship-notice">
+								<img src="images/lalamove.png" alt="Lalamove">
+								<span>Shipping fee will be shouldered by the buyer.</span>
+							</div>
+							<hr class="horizontal">
+							<div id="qty-container">
+								<div>Quantity</div>
+								<div id="qty-set-container">
+									<div id="qty-set">
+										<div id="qty-minus" class="disabled unselectable" data-cust_id="1">-</div>
+										<div id="qty-value">1</div>
+										<div id="qty-add" class="unselectable">+</div>
+										<input type="hidden" name="cart-qty" id="cart-qty" value="0">
+									</div>
+									<div class="">987 pieces available</div>
+								</div>
+							</div>
+							<p id="max-amount" class="warning hidden">You have reached the maximum available amount.</p>
+							<div id="action">
+								<button class="btn-cart" data-toggle="modal" data-target="cart-notif">Add to Cart</button>
+								<button class="btn-buy">Buy Now</button>
+							</div>
+						</div>
+					</div>
+					<div id="product-review">
+						<div id="rating-container">
+							<h2>Ratings</h2>
+							<div class="rating-row rate-5">
+								<div class="star-container">
+									<span class="star-count">5</span><i class="fa fa-star star-rating"></i>
+								</div>
+								<div class="cust-rating">
+									<div class="star-bar-container">
+										<div class="star-bar"></div>
+									</div>
+									<span class="rating-count">(0)</span>
+								</div>
+							</div>
+							<div class="rating-row rate-4">
+								<div class="star-container">
+									<span class="star-count">4</span><i class="fa fa-star star-rating"></i>
+								</div>
+								<div class="cust-rating">
+									<div class="star-bar-container">
+										<div class="star-bar"></div>
+									</div>
+									<span class="rating-count">(0)</span>
+								</div>
+							</div>
+							<div class="rating-row rate-3">
+								<div class="star-container">
+									<span class="star-count">3</span><i class="fa fa-star star-rating"></i>
+								</div>
+								<div class="cust-rating">
+									<div class="star-bar-container">
+										<div class="star-bar"></div>
+									</div>
+									<span class="rating-count">(0)</span>
+								</div>
+							</div>
+							<div class="rating-row rate-2">
+								<div class="star-container">
+									<span class="star-count">2</span><i class="fa fa-star star-rating"></i>
+								</div>
+								<div class="cust-rating">
+									<div class="star-bar-container">
+										<div class="star-bar"></div>
+									</div>
+									<span class="rating-count">(0)</span>
+								</div>
+							</div>
+							<div class="rating-row rate-1">
+								<div class="star-container">
+									<span class="star-count">1</span><i class="fa fa-star star-rating"></i>
+								</div>
+								<div class="cust-rating">
+									<div class="star-bar-container">
+										<div class="star-bar"></div>
+									</div>
+									<span class="rating-count">(0)</span>
+								</div>
+							</div>
+						</div>
+						<div id="review-container">
+							<h2>Reviews</h2>
+							<div id="empty-review" class="cust-review">
+								<p id="no-review">There are not enough reviews on this product yet.</p>
+								<p id="no-review-sub">Buy now and tell us what you think!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="scroll-top">
+					<span id="arrow-up">❮</span>
+				</div>
+			</div>
+			<footer>
+				<div class="row">
+					<div id="product-categories" class="column">
+						<h3>Product Categories</h3>
+						<p><a href="shop.html#new-release" class="category-footer">New Release</a></p>
+						<p><a href="shop.html#all" class="category-footer">All Products</a></p>
+						<p><a href="shop.html#flowers-plants" class="category-footer">Flowers &amp; Plants</a></p>
+						<p><a href="shop.html#pots-planters" class="category-footer">Pots &amp; Planters</a></p>
+					</div>
+					<div id="sns" class="column">
+						<ul>
+							<li>
+								<a class="shop-links" href="https://www.facebook.com/Dplant8" target="_blank">
+									<i class="fa fa-facebook-official fa-3x"></i>
+								</a>
+							</li>
+							<li>
+								<a class="shop-links" href="https://shopee.ph/plant8" target="_blank">
+									<img src="images/content/shopee.png" alt="Shopee">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div id="contact-footer" class="column">
+						<h3>Contact Us</h3>
+						<a id="message-us" href="about.html?loc=message-us">Message Us</a>
+						<p><label>Email:</label><a id="email" href="mailto:daplant8@gmail.com">daplant8@gmail.com</a></p>
+						<p>Quezon City, National Capital Region, Philippines 1100</p>
+					</div>
+				</div>
+				<div class="row">
+					<p>© 2021, <a href="index.html">Plant 8</a></p>
+				</div>
+			</footer>
+		</div>
+
+		<script type="text/javascript">
+			let maxQty = 987
+			$(document).on('click', '.min-img', function() {
+				changeMainImg($(this).attr('src'));
+			});
+
+			$(document).on('hover', '.min-img', function() {
+				changeMainImg($(this).attr('src'));
+			});
+
+			$(document).on('click', '#qty-minus', function() {
+				if($(this).hasClass('disabled'))
+					return;
+				else {
+					if(parseInt($('#qty-value').html()) - 1 == 1)
+						$(this).addClass('disabled');
+
+					$('#qty-value').html(parseInt($('#qty-value').html()) - 1);
+					$('#qty-add').removeClass('disabled');
+					$('#max-amount').addClass('hidden');
+				}
+			});
+
+			$(document).on('click', '#qty-add', function() {
+				if($(this).hasClass('disabled'))
+					return;
+				else {
+					if(parseInt($('#qty-value').html()) + 1 == maxQty)
+						$(this).addClass('disabled');
+
+					$('#qty-minus').removeClass('disabled');
+					$('#qty-value').html(parseInt($('#qty-value').html()) + 1);
+					if(parseInt($('#cart-qty').val()) + parseInt($('#qty-value').html()) == 987) {
+						$(this).addClass('disabled');
+						$('#max-amount').removeClass('hidden');
+					} else
+						$('#max-amount').addClass('hidden');
+				}
+			});
+
+			$(document).on('change', '#cart-qty', function() {
+				if(parseInt($('#cart-qty').val()) + parseInt($('#qty-value').html()) >= 987 || parseInt($('#cart-qty').val()) == 987) {
+					$('#max-amount').removeClass('hidden');
+					$('#qty-add').addClass('disabled');
+					if(parseInt($('#cart-qty').val()) == 987) {
+						$('.btn-cart').addClass('btn-disabled');
+						$('.btn-buy').addClass('btn-disabled');
+					} else {
+						$('.btn-cart').removeClass('btn-disabled');
+						$('.btn-buy').removeClass('btn-disabled');
+						if(987 - parseInt($('#cart-qty').val()) < parseInt($('#qty-value').html()))
+							$('#qty-value').html(987 - parseInt($('#cart-qty').val()));
+					}
+				} else {
+					$('#max-amount').addClass('hidden');
+					$('.btn-cart').removeClass('btn-disabled');
+					$('.btn-buy').removeClass('btn-disabled');
+					$('#qty-add').removeClass('disabled');
+
+					if(parseInt($('#qty-value').html()) > 1)
+						$('#qty-minus').removeClass('disabled');
+
+				}
+			});
+
+			$(document).on('click', '.btn-cart, .btn-buy', function() {
+				if(!$(this).hasClass('btn-disabled')) {
+					addtoCart($('#qty-value').html(), $(this));
+				}
+			});
+
+			$(document).on('click', '.rating-row', function() {
+				$('.cust-review').each(function() {
+					$(this).removeClass('hidden');
+				});
+				if($(this).hasClass('activeRating')) {
+					$(this).removeClass('activeRating');
+				} else {
+					$('.rating-row').removeClass('activeRating');
+					$(this).addClass('activeRating');
+					if($(this).hasClass('rate-1')) {
+						$('.cust-review').each(function(i) {
+							if(!$(this).hasClass('rate-1'))
+								$(this).addClass('hidden');
+						});
+					} else if($(this).hasClass('rate-2')) {
+						$('.cust-review').each(function(i) {
+							if(!$(this).hasClass('rate-2'))
+								$(this).addClass('hidden');
+						});
+					} else if($(this).hasClass('rate-3')) {
+						$('.cust-review').each(function(i) {
+							if(!$(this).hasClass('rate-3'))
+								$(this).addClass('hidden');
+						});
+					} else if($(this).hasClass('rate-4')) {
+						$('.cust-review').each(function(i) {
+							if(!$(this).hasClass('rate-4'))
+								$(this).addClass('hidden');
+						});
+					} else if($(this).hasClass('rate-5')) {
+						$('.cust-review').each(function(i) {
+							if(!$(this).hasClass('rate-5'))
+								$(this).addClass('hidden');
+						});
+					} 
+				}
+				
+				if($('.cust-review:not(#empty-review):visible').length > 0)
+					$('#empty-review').addClass('hidden');
+				else
+					$('#empty-review').removeClass('hidden');
+			});
+
+			$('body').click(function(event) {
+				if(!$(event.target).is("#user-settings") || !$(event.target).is("#user-icon") || !$(event.target).is(".fa-user-circle-o"))
+					$('#user-settings').removeClass('active');
+			});
+
+			function changeMainImg(src) {
+				$('#focus-img').attr('src', src);
+			}
+
+			// activate sticky header when page is scrolled
+			window.onscroll = function() {
+				activateSticky();
+			}
+
+			// remove shadow style if window width is lower than 901px
+			window.onload = function() {
+				$('#cart-qty').trigger('change');
+				activateSticky();
+
+				if($('.cust-review:not(#empty-review):visible').length > 0)
+					$('#empty-review').addClass('hidden');
+				else
+					$('#empty-review').removeClass('hidden');
+			}
+		</script>
+	</body>
+</html>

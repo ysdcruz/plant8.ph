@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<!-- Developers: Dela Cruz, Ysabel S. -->
+<!--             Villar, Ron-Arvil B. -->
+
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Plant 8 | Shop</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/content/favicon.ico">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Rancho&amp;family=Merriweather+Sans:wght@300;400&amp;family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet">
+		<link href="css/page.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/page-style.js"></script>
+	</head>
+	<body>
+		<div id="body-wrapper">
+			<div id="promo-banner">
+				<p id="promo-content">WE ONLY ACCEPT ORDERS IN METRO MANILA<a href="shop.html">Shop Now</a></p>
+			</div>
+			<header id="header-menu">
+				<div class="bg"></div>
+				<div id="left-item">
+					<span id="nav-icon" style="color: white;">&#9776;</span>
+					<a href="index.html"><img id="logo-container" src="images/content/logo2.png" alt="Plant 8"></a>
+					<a id="logo-name" class="title-shadow" href="index.html">Plant 8</a>
+				</div>
+				<div id="center-item" class="sidebar small-side left-origin">
+					<span id="left-close" class="close-icon">×</span>
+					<ul id="page-navigation" class="navigation">
+						<li><a href="index.html" class="nav-link shadow">HOME</a></li>
+						<li><a href="shop.html" class="nav-link shadow"><span id="current">SHOP</span></a></li>
+						<li><a href="about.html" class="nav-link shadow">ABOUT US</a></li>
+					</ul>
+				</div>
+				<div id="right-item">
+					<div id="right-sidebar" class="sidebar small-side right-origin">
+						<span id="right-close" class="close-icon">×</span>
+						<ul id="user-settings" class="navigation">
+							<a href="orders.html"><li id="history">Orders</li></a>
+							<a href="settings.html"><li id="settings">Settings</li></a>
+							<a href="#"><li id="log-out">Log Out</li></a>
+						</ul>
+					</div>
+					<div id="user-icon" class="icon">
+						<img src="images/users/1.jpg" alt="Ysabel Dela Cruz">
+					</div>
+					<div>
+						<img id="cart-icon" class="icon" src="images/cart.png" data-toggle="modal" data-target="#cart-modal" alt="Cart">
+						<span id="cart-count">2</span>
+					</div>
+				</div>
+				<div id="cart-modal" class="modal" style="display: none;" aria-hidden="true">
+					<div class="modal-content">
+						<div class="modal-body">
+							<span class="X" data-dismiss="modal">&times;</span>
+							<h2>Your Cart</h2>
+							<hr class="horizontal">
+							<div id="cart-empty" style="display: none;">
+							<p>Oops. Looks like your cart is empty.</p>
+							<button id="shop-redirect" class="redirect">Shop Now</button>
+						</div>
+						<div id="cart-items" style="display: block;">
+							<div class="modal-field">
+								<div>
+									<input type="checkbox" id="select-all" class="ord-checkbox">
+									<span class="checkmark cart-checkmark"></span>
+								</div>
+								<div>
+									<button id="delete-cart" class="btn-red btn-disabled" data-cust_id="1"><i class="fa fa-trash"></i>Delete</button>
+								</div>
+							</div>
+							<hr class="horizontal">
+							<div id="ord-all">
+								<div class="modal-field">
+									<div class="ord-product">
+										<input type="checkbox" class="ord-checkbox" data-cart_id="442">
+										<span class="checkmark cart-checkmark"></span>
+										<div class="ord-image">
+											<img src="images/products/Broadleaf_Palm_Lily_with_Pot_-_Indoor_Plant/Broadleaf_Palm_Lily_with_Pot_-_Indoor_Plant.jpg">
+										</div>
+										<div class="ord-summary">
+											<div class="ord-desc">
+												<p class="ord-name">Broadleaf Palm Lily with Pot - Indoor Plant</p>
+												<p class="ord-price">₱ 270.00</p>
+												<div class="qty-set">
+													<div class="qty-minus unselectable" data-cust_id="1" data-cart_id="442" data-prod_id="3" data-prod_price="270.00">-</div>
+													<div class="qty-value">1</div>
+													<div class="qty-add unselectable" data-maxqty="983" data-cart_id="442" data-prod_id="3" data-prod_price="270.00">+</div>
+												</div>
+												<div class="qty-avail">983 pieces left</div>
+											</div>
+											<p class="ord-sub-price">₱ 270.00</p>
+										</div>
+									</div>
+									<hr class="horizontal">
+								</div>
+								<div class="modal-field">
+									<div class="ord-product">
+										<input type="checkbox" class="ord-checkbox" data-cart_id="441">
+										<span class="checkmark cart-checkmark"></span>
+										<div class="ord-image">
+											<img src="images/products/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant.jpg">
+										</div>
+										<div class="ord-summary">
+											<div class="ord-desc">
+												<p class="ord-name">San Flores Plant with pot (Indoor or Outdoor) Accent Plant</p>
+												<p class="ord-price">₱ 350.00</p>
+												<div class="qty-set">
+													<div class="qty-minus unselectable" data-cust_id="1" data-cart_id="441" data-prod_id="1" data-prod_price="350.00">-</div>
+													<div class="qty-value">1</div>
+													<div class="qty-add unselectable" data-maxqty="941" data-cart_id="441" data-prod_id="1" data-prod_price="350.00">+</div>
+												</div>
+												<div class="qty-avail">941 pieces left</div>
+											</div>
+											<p class="ord-sub-price">₱ 350.00</p>
+										</div>
+									</div>
+									<hr class="horizontal">
+								</div>
+							</div>
+							<div id="modal-total" class="modal-field">
+								<p><span id="ord-total-qty">2 items</span>, Total: ₱ <span id="ord-total-price">620.00</span></p>
+							</div>
+							<div id="checkout-field" class="modal-field">
+								<button id="checkout-cart" class="btn-green btn-disabled"><i class="fa fa-shopping-basket"></i>Checkout</button>
+							</div>
+							<h4>You may like:</h4>
+							<div id="cart-recommend">
+								<a href="product.html?ID=2&amp;prod=sea+orache (indoor or outdoor plant)">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/Sea_Orache_(Indoor_or_Outdoor_Plant)/Sea_Orache_(Indoor_or_Outdoor_Plant).jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>Sea Orache (Indoor or Outdoor Plant)</p>
+											</div>
+											<p class="recom-price">₱ 250.00</p>
+										</div>
+									</div>
+								</a>
+								<a href="product.html?ID=1&amp;prod=san+flores plant with pot (indoor or outdoor) accent plant">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant.jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>San Flores Plant with pot (Indoor or Outdoor) Accent Plant</p>
+											</div>
+											<p class="recom-price">₱ 350.00</p>
+										</div>
+									</div>
+								</a>
+								<a href="product.html?ID=49&amp;prod=2+pcs ceramic pots for your plants">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/2_pcs_Cermic_Pots_for_your_plants/2_pcs_Cermic_Pots_for_your_plants.jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>2 pcs Ceramic Pots for your plants</p>
+											</div>
+											<p class="recom-price">₱ 250.00</p>
+										</div>
+									</div>
+								</a>
+								<a href="product.html?ID=59&amp;prod=fernwood+sanseviera - indoor plant">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/Fernwood_Sanseviera_-_Indoor_Plant/Fernwood_Sanseviera_-_Indoor_Plant.jpg"></div>
+											<div class="recom-info">
+												<div class="recom-name">
+													<p>Fernwood Sanseviera - Indoor Plant</p>
+												</div>
+												<p class="recom-price">₱ 85.00</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="load-modal" class="modal" data-backdrop="static" data-keyboard="false">
+					<div class="loader"></div>
+				</div>
+			</header>
+			<div id="main" class="no-banner">
+				<div class="bg"></div>
+				<div class="inner main-grid">
+					<div id="product-sidebar">
+						<div id="product-search-container">
+							<input type="text" placeholder="Search.." name="search" id="product-search">
+							<button type="submit" name="submit" id="product-search-button" value="submit"><img id="search-submit" src="images/search.png" alt="Search"></button>
+						</div>
+						<button type="button" name="filter" id="filter">Filter</button>
+						<div id="category-sidebar" class="sidebar small-side left-huge-origin">
+							<span id="category-close" class="close-icon">×</span>
+							<ul id="category">
+								<a href="#new-release"><li id="new-release" class="category-tab"><i class="fa fa-star-o fa-lg"></i>New Release</li></a>
+								<a href="#all"><li id="all" class="category-tab current-category"><img src="images/all.png">All Products</li></a>
+								<a href="#flowers-plants"><li id="flowers-plants" class="category-tab"><i class="fa fa-tree fa-lg"></i>Flowers &amp; Plants</li></a>
+								<a href="#pots-planters"><li id="pots-planters" class="category-tab"><i class="fa fa-leaf fa-lg"></i>Pots &amp; Planters</li></a>
+							</ul>
+						</div>
+					</div>
+					<div id="main-product">
+						<div id="sort-by" class="unselectable">
+							<span>Sort by</span>
+							<div>
+								<input type="radio" name="sort" id="popular" checked=""><label for="popular">Popular</label>
+								<input type="radio" name="sort" id="latest"><label for="latest">Latest</label>
+								<div id="dropdown-wrapper">
+									<div id="dropdown-custom">
+										<input type="radio" name="sort" id="price" class="hidden">
+										<div id="selected-custom">Price</div><span id="price-arrow" style="transform: rotate(-90deg); color: black;">❮</span>
+										<div id="options-custom" style="visibility: hidden; opacity: 0;">
+											<span class="option-custom" data-value="up">Price: Low to High</span>
+											<span class="option-custom" data-value="down">Price: High to Low</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="no-record" class="hidden">
+							<h2 id="error-title"></h2>
+							<p id="error-message"></p>
+							<div id="error-image" class="hidden">
+								<img src="images/no-result.png" alt="No result">
+							</div>
+							<div id="search-tips" class="hidden">
+								<h3>Search Tips</h3>
+								<ul>
+									<li>Check your spelling.</li>
+									<li>Try different keywords.</li>
+									<li>Broaden your search by using fewer or more general words.</li>
+								</ul>
+							</div>
+						</div>
+						<div id="product-grid">
+							<a href="product.html?ID=10&amp;prod=ribbon+plant+-+indoor+or+outdoor+plant" class="product-link Plant/Flowers" data-prod_id="10" data-prod_name="Ribbon Plant - Indoor or Outdoor Plant" data-prod_price="600.00" data-prod_popularity="9">
+								<div class="product" data-prod_id="10" data-prod_name="Ribbon Plant - Indoor or Outdoor Plant">
+									<div class="product-image">
+										<img src="images/products/Ribbon_Plant_-_Indoor_or_Outdoor_Plant/Ribbon_Plant_-_Indoor_or_Outdoor_Plant.jpg" alt="Ribbon Plant - Indoor or Outdoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Ribbon Plant - Indoor or Outdoor Plant</p>
+										</div>
+										<p class="product-price">₱ 600.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=20&amp;prod=snake+plant+-+indoor+plant" class="product-link Plant/Flowers" data-prod_id="20" data-prod_name="Snake Plant - Indoor Plant" data-prod_price="200.00" data-prod_popularity="9">
+								<div class="product" data-prod_id="20" data-prod_name="Snake Plant - Indoor Plant">
+									<div class="product-image">
+										<img src="images/products/Snake_Plant_-_Indoor_Plant/Snake_Plant_-_Indoor_Plant.jpg" alt="Snake Plant - Indoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Snake Plant - Indoor Plant</p>
+										</div>
+										<p class="product-price">₱ 200.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=21&amp;prod=s.+boncel+with+pot+(medium+size)" class="product-link Plant/Flowers" data-prod_id="21" data-prod_name="S. Boncel with Pot (Medium Size)" data-prod_price="550.00" data-prod_popularity="9">
+								<div class="product" data-prod_id="21" data-prod_name="S. Boncel with Pot (Medium Size)">
+									<div class="product-image">
+										<img src="images/products/S._Boncel_with_Pot_(Medium_Size)/S._Boncel_with_Pot_(Medium_Size).jpg" alt="S. Boncel with Pot (Medium Size)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>S. Boncel with Pot (Medium Size)</p>
+										</div>
+										<p class="product-price">₱ 550.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=14&amp;prod=campire+succulent+(indoor+or+desk+plant)" class="product-link Plant/Flowers" data-prod_id="14" data-prod_name="Campire Succulent (Indoor or Desk Plant)" data-prod_price="200.00" data-prod_popularity="7">
+								<div class="product" data-prod_id="14" data-prod_name="Campire Succulent (Indoor or Desk Plant)">
+									<div class="product-image">
+										<img src="images/products/Campire_Succulent_(Indoor_or_Desk_Plant)/Campire_Succulent_(Indoor_or_Desk_Plant).jpg" alt="Campire Succulent (Indoor or Desk Plant)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Campire Succulent (Indoor or Desk Plant)</p>
+										</div>
+										<p class="product-price">₱ 200.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=26&amp;prod=3+pcs+well+draining+white+pot" class="product-link Pot/Planters" data-prod_id="26" data-prod_name="3 pcs Well Draining White Pot" data-prod_price="69.00" data-prod_popularity="7">
+								<div class="product" data-prod_id="26" data-prod_name="3 pcs Well Draining White Pot">
+									<div class="product-image">
+										<img src="images/products/3_pcs_Well_Draining_White_Pot/3_pcs_Well_Draining_White_Pot.jpg" alt="3 pcs Well Draining White Pot">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>3 pcs Well Draining White Pot</p>
+										</div>
+										<p class="product-price">₱ 69.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=56&amp;prod=echeveria+gigantea+rose+&amp;+purpus" class="product-link Plant/Flowers" data-prod_id="56" data-prod_name="Echeveria gigantea Rose &amp; Purpus" data-prod_price="250.00" data-prod_popularity="7">
+								<div class="product" data-prod_id="56" data-prod_name="Echeveria gigantea Rose &amp; Purpus">
+									<div class="product-image">
+										<img src="images/products/Echeveria_gigantea_Rose_Purpus/Echeveria_gigantea_Rose_Purpus.jpg" alt="Echeveria gigantea Rose &amp; Purpus">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Echeveria gigantea Rose &amp; Purpus</p>
+										</div>
+										<p class="product-price">₱ 250.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=64&amp;prod=cat's+claw+succulent" class="product-link Plant/Flowers" data-prod_id="64" data-prod_name="Cat's Claw Succulent" data-prod_price="100.00" data-prod_popularity="7">
+								<div class="product" data-prod_id="64" data-prod_name="Cat's Claw Succulent">
+									<div class="product-image">
+										<img src="images/products/Cat_s_Claw_Succulent/Cat_s_Claw_Succulent.jpg" alt="Cat's Claw Succulent">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Cat's Claw Succulent</p>
+										</div>
+										<p class="product-price">₱ 100.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=16&amp;prod=sanserviera+-+indoor+plant" class="product-link Plant/Flowers" data-prod_id="16" data-prod_name="Sanserviera - Indoor Plant" data-prod_price="1800.00" data-prod_popularity="6">
+								<div class="product" data-prod_id="16" data-prod_name="Sanserviera - Indoor Plant">
+									<div class="product-image">
+										<img src="images/products/Sanserviera_-_Indoor_Plant/Sanserviera_-_Indoor_Plant.jpg" alt="Sanserviera - Indoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Sanserviera - Indoor Plant</p>
+										</div>
+										<p class="product-price">₱ 1,800.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=23&amp;prod=sansevieria+cylindrica+bojer+-+indoor+plant" class="product-link Plant/Flowers" data-prod_id="23" data-prod_name="Sansevieria cylindrica Bojer - Indoor Plant" data-prod_price="1499.00" data-prod_popularity="6">
+								<div class="product" data-prod_id="23" data-prod_name="Sansevieria cylindrica Bojer - Indoor Plant">
+									<div class="product-image">
+										<img src="images/products/Sansevieria_cylindrica_Bojer_-_Indoor_Plant/Sansevieria_cylindrica_Bojer_-_Indoor_Plant.jpg" alt="Sansevieria cylindrica Bojer - Indoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Sansevieria cylindrica Bojer - Indoor Plant</p>
+										</div>
+										<p class="product-price">₱ 1,499.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=25&amp;prod=2+pcs+gray+matte+round+desk+pot" class="product-link Pot/Planters" data-prod_id="25" data-prod_name="2 Pcs Gray Matte Round Desk Pot" data-prod_price="89.00" data-prod_popularity="6">
+								<div class="product" data-prod_id="25" data-prod_name="2 Pcs Gray Matte Round Desk Pot">
+									<div class="product-image">
+										<img src="images/products/2_Pcs_Gray_Matte_Round_Desk_Pot/2_Pcs_Gray_Matte_Round_Desk_Pot.jpg" alt="2 Pcs Gray Matte Round Desk Pot">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>2 Pcs Gray Matte Round Desk Pot</p>
+										</div>
+										<p class="product-price">₱ 89.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=12&amp;prod=air+plant+(yellow)+indoor+plant" class="product-link Plant/Flowers" data-prod_id="12" data-prod_name="Air Plant (Yellow) Indoor Plant" data-prod_price="350.00" data-prod_popularity="5">
+								<div class="product" data-prod_id="12" data-prod_name="Air Plant (Yellow) Indoor Plant">
+									<div class="product-image">
+										<img src="images/products/Air_Plant_(Yellow)_Indoor_Plant/Air_Plant_(Yellow)_Indoor_Plant.jpg" alt="Air Plant (Yellow) Indoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Air Plant (Yellow) Indoor Plant</p>
+										</div>
+										<p class="product-price">₱ 350.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=13&amp;prod=air+plant+-+indoor+plant+(+no+soil+needed,+low+maintenance.)" class="product-link Plant/Flowers" data-prod_id="13" data-prod_name="Air Plant - Indoor Plant ( No Soil Needed, Low Maintenance.)" data-prod_price="300.00" data-prod_popularity="5">
+								<div class="product" data-prod_id="13" data-prod_name="Air Plant - Indoor Plant ( No Soil Needed, Low Maintenance.)">
+									<div class="product-image">
+										<img src="images/products/Air_Plant_-_Indoor_Plant_(No_Soil_Needed,_Low_Maintenance.)/Air_Plant_-_Indoor_Plant_(No_Soil_Needed,_Low_Maintenance.).jpg" alt="Air Plant - Indoor Plant ( No Soil Needed, Low Maintenance.)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Air Plant - Indoor Plant ( No Soil Needed, Low Maintenance.)</p>
+										</div>
+										<p class="product-price">₱ 300.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=24&amp;prod=golden+photos+-+indoor+or+outdoor+plant" class="product-link Plant/Flowers" data-prod_id="24" data-prod_name="Golden Photos - Indoor or Outdoor Plant" data-prod_price="300.00" data-prod_popularity="5">
+								<div class="product" data-prod_id="24" data-prod_name="Golden Photos - Indoor or Outdoor Plant">
+									<div class="product-image">
+										<img src="images/products/Golden_Photos_-_Indoor_or_Outdoor_Plant/Golden_Photos_-_Indoor_or_Outdoor_Plant.jpg" alt="Golden Photos - Indoor or Outdoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Golden Photos - Indoor or Outdoor Plant</p>
+										</div>
+										<p class="product-price">₱ 300.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=28&amp;prod=ceramic+pot+-+with+cute+wooden+handle" class="product-link Pot/Planters" data-prod_id="28" data-prod_name="Ceramic Pot - with cute wooden Handle" data-prod_price="99.00" data-prod_popularity="5">
+								<div class="product" data-prod_id="28" data-prod_name="Ceramic Pot - with cute wooden Handle">
+									<div class="product-image">
+										<img src="images/products/Ceramic_Pot_-_with_cute_wooden_Handle/Ceramic_Pot_-_with_cute_wooden_Handle.jpg" alt="Ceramic Pot - with cute wooden Handle">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Ceramic Pot - with cute wooden Handle</p>
+										</div>
+										<p class="product-price">₱ 99.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=1&amp;prod=san+flores+plant+with+pot+(indoor+or+outdoor)+accent+plant" class="product-link Plant/Flowers" data-prod_id="1" data-prod_name="San Flores Plant with pot (Indoor or Outdoor) Accent Plant" data-prod_price="350.00" data-prod_popularity="46">
+								<div class="product" data-prod_id="1" data-prod_name="San Flores Plant with pot (Indoor or Outdoor) Accent Plant">
+									<div class="product-image">
+										<img src="images/products/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant.jpg" alt="San Flores Plant with pot (Indoor or Outdoor) Accent Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>San Flores Plant with pot (Indoor or Outdoor) Accent Plant</p>
+										</div>
+										<p class="product-price">₱ 350.00</p>
+										<p class="rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=61&amp;prod=vintage+geometrical+patterned+ceramic+pots+l" class="product-link Pot/Planters" data-prod_id="61" data-prod_name="Vintage Geometrical Patterned Ceramic Pots l" data-prod_price="85.00" data-prod_popularity="4">
+								<div class="product" data-prod_id="61" data-prod_name="Vintage Geometrical Patterned Ceramic Pots l">
+									<div class="product-image">
+										<img src="images/products/Vintage_Geometrical_Patterned_Cermic_Pots_l/Vintage_Geometrical_Patterned_Cermic_Pots_l.jpg" alt="Vintage Geometrical Patterned Ceramic Pots l">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Vintage Geometrical Patterned Ceramic Pots l</p>
+										</div>
+										<p class="product-price">₱ 85.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=2&amp;prod=sea+orache+(indoor+or+outdoor+plant)" class="product-link Plant/Flowers" data-prod_id="2" data-prod_name="Sea Orache (Indoor or Outdoor Plant)" data-prod_price="250.00" data-prod_popularity="39">
+								<div class="product" data-prod_id="2" data-prod_name="Sea Orache (Indoor or Outdoor Plant)">
+									<div class="product-image">
+										<img src="images/products/Sea_Orache_(Indoor_or_Outdoor_Plant)/Sea_Orache_(Indoor_or_Outdoor_Plant).jpg" alt="Sea Orache (Indoor or Outdoor Plant)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Sea Orache (Indoor or Outdoor Plant)</p>
+										</div>
+										<p class="product-price">₱ 250.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=5&amp;prod=cactus+for+your+desk+-+limited+stocks+only" class="product-link Plant/Flowers" data-prod_id="5" data-prod_name="Cactus for your desk - Limited stocks only" data-prod_price="450.00" data-prod_popularity="32">
+								<div class="product" data-prod_id="5" data-prod_name="Cactus for your desk - Limited stocks only">
+									<div class="product-image">
+										<img src="images/products/Cactus_for_your_desk_-_Limited_stocks_only/Cactus_for_your_desk_-_Limited_stocks_only.jpg" alt="Cactus for your desk - Limited stocks only">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Cactus for your desk - Limited stocks only</p>
+										</div>
+										<p class="product-price">₱ 450.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=15&amp;prod=rubra+airplant+-+low+maintenance+plant" class="product-link Plant/Flowers" data-prod_id="15" data-prod_name="Rubra Airplant - Low Maintenance Plant" data-prod_price="350.00" data-prod_popularity="3">
+								<div class="product" data-prod_id="15" data-prod_name="Rubra Airplant - Low Maintenance Plant">
+									<div class="product-image">
+										<img src="images/products/Rubra_Airplant_-_Low_Maintenance_Plant/Rubra_Airplant_-_Low_Maintenance_Plant.jpg" alt="Rubra Airplant - Low Maintenance Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Rubra Airplant - Low Maintenance Plant</p>
+										</div>
+										<p class="product-price">₱ 350.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=22&amp;prod=mini+hybrid+sanseviera+-+indoor+plant" class="product-link Plant/Flowers" data-prod_id="22" data-prod_name="Mini Hybrid Sanseviera - Indoor Plant" data-prod_price="350.00" data-prod_popularity="3">
+								<div class="product" data-prod_id="22" data-prod_name="Mini Hybrid Sanseviera - Indoor Plant">
+									<div class="product-image">
+										<img src="images/products/Mini_Hybrid_Sanseviera_-_Indoor_Plant/Mini_Hybrid_Sanseviera_-_Indoor_Plant.jpg" alt="Mini Hybrid Sanseviera - Indoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Mini Hybrid Sanseviera - Indoor Plant</p>
+										</div>
+										<p class="product-price">₱ 350.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=27&amp;prod=dichaea+panamensis+-+indoor+or+outdoor+plant" class="product-link Plant/Flowers" data-prod_id="27" data-prod_name="Dichaea panamensis - Indoor or Outdoor Plant" data-prod_price="299.00" data-prod_popularity="3">
+								<div class="product" data-prod_id="27" data-prod_name="Dichaea panamensis - Indoor or Outdoor Plant">
+									<div class="product-image">
+										<img src="images/products/Dichaea_panamensis_-_Indoor_or_Outdoor_Plant/Dichaea_panamensis_-_Indoor_or_Outdoor_Plant.jpg" alt="Dichaea panamensis - Indoor or Outdoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Dichaea panamensis - Indoor or Outdoor Plant</p>
+										</div>
+										<p class="product-price">₱ 299.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=29&amp;prod=calathea+-+indoor+plant" class="product-link Plant/Flowers" data-prod_id="29" data-prod_name="Calathea - Indoor Plant" data-prod_price="3000.00" data-prod_popularity="3">
+								<div class="product" data-prod_id="29" data-prod_name="Calathea - Indoor Plant">
+									<div class="product-image">
+										<img src="images/products/Calathea_-_Indoor_Plant/Calathea_-_Indoor_Plant.jpg" alt="Calathea - Indoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Calathea - Indoor Plant</p>
+										</div>
+										<p class="product-price">₱ 3,000.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=31&amp;prod=round+ceramic+pot+-+vintage" class="product-link Pot/Planters" data-prod_id="31" data-prod_name="Round Ceramic Pot - Vintage" data-prod_price="99.00" data-prod_popularity="3">
+								<div class="product" data-prod_id="31" data-prod_name="Round Ceramic Pot - Vintage">
+									<div class="product-image">
+										<img src="images/products/Round_Ceramic_Pot_-_Vintage/Round_Ceramic_Pot_-_Vintage.jpg" alt="Round Ceramic Pot - Vintage">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Round Ceramic Pot - Vintage</p>
+										</div>
+										<p class="product-price">₱ 99.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=33&amp;prod=matte+black+bell+thailand+pots" class="product-link Pot/Planters" data-prod_id="33" data-prod_name="Matte Black Bell Thailand Pots" data-prod_price="29.00" data-prod_popularity="3">
+								<div class="product" data-prod_id="33" data-prod_name="Matte Black Bell Thailand Pots">
+									<div class="product-image">
+										<img src="images/products/Matte_Black_Bell_Thailand_Pots/Matte_Black_Bell_Thailand_Pots.jpg" alt="Matte Black Bell Thailand Pots">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Matte Black Bell Thailand Pots</p>
+										</div>
+										<p class="product-price">₱ 29.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=42&amp;prod=zebra+succulent+in+pink+pot" class="product-link Plant/Flowers" data-prod_id="42" data-prod_name="Zebra Succulent in Pink Pot" data-prod_price="299.00" data-prod_popularity="3">
+								<div class="product" data-prod_id="42" data-prod_name="Zebra Succulent in Pink Pot">
+									<div class="product-image">
+										<img src="images/products/Zebra_Succulent_in_Pink_Pot/Zebra_Succulent_in_Pink_Pot.jpg" alt="Zebra Succulent in Pink Pot">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Zebra Succulent in Pink Pot</p>
+										</div>
+										<p class="product-price">₱ 299.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=53&amp;prod=bacularis+-+indoor+plant" class="product-link Plant/Flowers" data-prod_id="53" data-prod_name="Bacularis - Indoor Plant" data-prod_price="169.00" data-prod_popularity="3">
+								<div class="product" data-prod_id="53" data-prod_name="Bacularis - Indoor Plant">
+									<div class="product-image">
+										<img src="images/products/Bacularis_-_Indoor_Plant/Bacularis_-_Indoor_Plant.jpg" alt="Bacularis - Indoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Bacularis - Indoor Plant</p>
+										</div>
+										<p class="product-price">₱ 169.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=54&amp;prod=dracaena+with+pot+(indoor+plant)" class="product-link Plant/Flowers" data-prod_id="54" data-prod_name="Dracaena with Pot (indoor plant)" data-prod_price="259.00" data-prod_popularity="3">
+								<div class="product" data-prod_id="54" data-prod_name="Dracaena with Pot (indoor plant)">
+									<div class="product-image">
+										<img src="images/products/Dracena_with_Pot_(indoor_plant)/Dracena_with_Pot_(indoor_plant).jpg" alt="Dracaena with Pot (indoor plant)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Dracaena with Pot (indoor plant)</p>
+										</div>
+										<p class="product-price">₱ 259.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=7&amp;prod=white+pot+for+your+succulents+and+cactus+(indoor+plant)" class="product-link Pot/Planters" data-prod_id="7" data-prod_name="White Pot for your succulents and Cactus (indoor Plant)" data-prod_price="35.00" data-prod_popularity="28">
+								<div class="product" data-prod_id="7" data-prod_name="White Pot for your succulents and Cactus (indoor Plant)">
+									<div class="product-image">
+										<img src="images/products/White_Pot_for_your_succulents_and_Cactus_(indoor_Plant)/White_Pot_for_your_succulents_and_Cactus_(indoor_Plant).jpg" alt="White Pot for your succulents and Cactus (indoor Plant)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>White Pot for your succulents and Cactus (indoor Plant)</p>
+										</div>
+										<p class="product-price">₱ 35.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=6&amp;prod=mint+green+round+pot+(desk+pots)" class="product-link Pot/Planters" data-prod_id="6" data-prod_name="Mint Green Round Pot (Desk Pots)" data-prod_price="50.00" data-prod_popularity="26">
+								<div class="product" data-prod_id="6" data-prod_name="Mint Green Round Pot (Desk Pots)">
+									<div class="product-image">
+										<img src="images/products/Mint_Green_Round_Pot_(Desk_Pots)/Mint_Green_Round_Pot_(Desk_Pots).jpg" alt="Mint Green Round Pot (Desk Pots)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Mint Green Round Pot (Desk Pots)</p>
+										</div>
+										<p class="product-price">₱ 50.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=32&amp;prod=geometrical+pattered+ceramic+pot" class="product-link Pot/Planters" data-prod_id="32" data-prod_name="Geometrical Pattered Ceramic Pot" data-prod_price="99.00" data-prod_popularity="2">
+								<div class="product" data-prod_id="32" data-prod_name="Geometrical Pattered Ceramic Pot">
+									<div class="product-image">
+										<img src="images/products/Geometrical_Pattered_Ceramic_Pot/Geometrical_Pattered_Ceramic_Pot.jpg" alt="Geometrical Pattered Ceramic Pot">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Geometrical Pattered Ceramic Pot</p>
+										</div>
+										<p class="product-price">₱ 99.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=40&amp;prod=sansevieria+francisii+chahin+with+pot+(silver+nymp)+big" class="product-link Plant/Flowers" data-prod_id="40" data-prod_name="Sansevieria francisii Chahin with pot (Silver Nymp) Big" data-prod_price="1500.00" data-prod_popularity="2">
+								<div class="product" data-prod_id="40" data-prod_name="Sansevieria francisii Chahin with pot (Silver Nymp) Big">
+									<div class="product-image">
+										<img src="images/products/Sansevieria_francisii_Chahin_with_pot_(Silver_Nymp)_Big/Sansevieria_francisii_Chahin_with_pot_(Silver_Nymp)_Big.jpg" alt="Sansevieria francisii Chahin with pot (Silver Nymp) Big">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Sansevieria francisii Chahin with pot (Silver Nymp) Big</p>
+										</div>
+										<p class="product-price">₱ 1,500.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=47&amp;prod=snake+plant+(green-yellow+lining)" class="product-link Plant/Flowers" data-prod_id="47" data-prod_name="Snake Plant (Green-Yellow Lining)" data-prod_price="200.00" data-prod_popularity="2">
+								<div class="product" data-prod_id="47" data-prod_name="Snake Plant (Green-Yellow Lining)">
+									<div class="product-image">
+										<img src="images/products/Snake_Plant_(Green-Yellow_Lining)/Snake_Plant_(Green-Yellow_Lining).jpg" alt="Snake Plant (Green-Yellow Lining)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Snake Plant (Green-Yellow Lining)</p>
+										</div>
+										<p class="product-price">₱ 200.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=50&amp;prod=bacuilaris+cylindrical+succulent+with+pot+-+indoor+plant" class="product-link Plant/Flowers" data-prod_id="50" data-prod_name="Bacuilaris Cylindrical Succulent with Pot - Indoor Plant" data-prod_price="299.00" data-prod_popularity="2">
+								<div class="product" data-prod_id="50" data-prod_name="Bacuilaris Cylindrical Succulent with Pot - Indoor Plant">
+									<div class="product-image">
+										<img src="images/products/Bacuilaris_Cylindrical_Succulent_with_Pot_-_Indoor_Plant/Bacuilaris_Cylindrical_Succulent_with_Pot_-_Indoor_Plant.jpg" alt="Bacuilaris Cylindrical Succulent with Pot - Indoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Bacuilaris Cylindrical Succulent with Pot - Indoor Plant</p>
+										</div>
+										<p class="product-price">₱ 299.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=55&amp;prod=christmas+plant+sale+-+haworthia+herbacea" class="product-link Plant/Flowers" data-prod_id="55" data-prod_name="Christmas Plant Sale - Haworthia Herbacea" data-prod_price="99.00" data-prod_popularity="2">
+								<div class="product" data-prod_id="55" data-prod_name="Christmas Plant Sale - Haworthia Herbacea">
+									<div class="product-image">
+										<img src="images/products/Christmas_Plant_Sale_-_Haworthia_Herbacea/Christmas_Plant_Sale_-_Haworthia_Herbacea.jpg" alt="Christmas Plant Sale - Haworthia Herbacea">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Christmas Plant Sale - Haworthia Herbacea</p>
+										</div>
+										<p class="product-price">₱ 99.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=62&amp;prod=cryptanthus+earth+star+(indoor+plant)" class="product-link Plant/Flowers" data-prod_id="62" data-prod_name="Cryptanthus Earth Star (Indoor Plant)" data-prod_price="350.00" data-prod_popularity="2">
+								<div class="product" data-prod_id="62" data-prod_name="Cryptanthus Earth Star (Indoor Plant)">
+									<div class="product-image">
+										<img src="images/products/Cryptanthus_Earth_Star_(Indoor_Plant)/Cryptanthus_Earth_Star_(Indoor_Plant).jpg" alt="Cryptanthus Earth Star (Indoor Plant)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Cryptanthus Earth Star (Indoor Plant)</p>
+										</div>
+										<p class="product-price">₱ 350.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=63&amp;prod=white+pot+for+your+indoor+plants" class="product-link Pot/Planters" data-prod_id="63" data-prod_name="White Pot for your indoor plants" data-prod_price="35.00" data-prod_popularity="2">
+								<div class="product" data-prod_id="63" data-prod_name="White Pot for your indoor plants">
+									<div class="product-image">
+										<img src="images/products/White_Pot_for_your_indoor_plants/White_Pot_for_your_indoor_plants.jpg" alt="White Pot for your indoor plants">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>White Pot for your indoor plants</p>
+										</div>
+										<p class="product-price">₱ 35.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=4&amp;prod=texas+rainbow+cactus" class="product-link Plant/Flowers" data-prod_id="4" data-prod_name="Texas Rainbow Cactus" data-prod_price="400.00" data-prod_popularity="19">
+								<div class="product" data-prod_id="4" data-prod_name="Texas Rainbow Cactus">
+									<div class="product-image">
+										<img src="images/products/Texas_Rainbow_Cactus/Texas_Rainbow_Cactus.jpg" alt="Texas Rainbow Cactus">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Texas Rainbow Cactus</p>
+										</div>
+										<p class="product-price">₱ 400.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=11&amp;prod=chinese+evergreen+-+indoor+plant" class="product-link Plant/Flowers" data-prod_id="11" data-prod_name="Chinese Evergreen - Indoor Plant" data-prod_price="650.00" data-prod_popularity="18">
+								<div class="product" data-prod_id="11" data-prod_name="Chinese Evergreen - Indoor Plant">
+									<div class="product-image">
+										<img src="images/products/Chinese_Evergreen_-_Indoor_Plant/Chinese_Evergreen_-_Indoor_Plant.jpg" alt="Chinese Evergreen - Indoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Chinese Evergreen - Indoor Plant</p>
+										</div>
+										<p class="product-price">₱ 650.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=17&amp;prod=shark+fins+-+indoor+plant+(+soil+and+pot+included)" class="product-link Plant/Flowers" data-prod_id="17" data-prod_name="Shark Fins - Indoor Plant ( Soil and Pot Included)" data-prod_price="400.00" data-prod_popularity="18">
+								<div class="product" data-prod_id="17" data-prod_name="Shark Fins - Indoor Plant ( Soil and Pot Included)">
+									<div class="product-image">
+										<img src="images/products/Shark_Fins_-_Indoor_Plant_(Soil_and_Pot_Included)/Shark_Fins_-_Indoor_Plant_(Soil_and_Pot_Included).jpg" alt="Shark Fins - Indoor Plant ( Soil and Pot Included)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Shark Fins - Indoor Plant ( Soil and Pot Included)</p>
+										</div>
+										<p class="product-price">₱ 400.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=3&amp;prod=broadleaf+palm+lily+with+pot+-+indoor+plant" class="product-link Plant/Flowers" data-prod_id="3" data-prod_name="Broadleaf Palm Lily with Pot - Indoor Plant" data-prod_price="270.00" data-prod_popularity="15">
+								<div class="product" data-prod_id="3" data-prod_name="Broadleaf Palm Lily with Pot - Indoor Plant">
+									<div class="product-image">
+										<img src="images/products/Broadleaf_Palm_Lily_with_Pot_-_Indoor_Plant/Broadleaf_Palm_Lily_with_Pot_-_Indoor_Plant.jpg" alt="Broadleaf Palm Lily with Pot - Indoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Broadleaf Palm Lily with Pot - Indoor Plant</p>
+										</div>
+										<p class="product-price">₱ 270.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=8&amp;prod=golden+barrel+cactus" class="product-link Plant/Flowers" data-prod_id="8" data-prod_name="Golden Barrel Cactus" data-prod_price="400.00" data-prod_popularity="15">
+								<div class="product" data-prod_id="8" data-prod_name="Golden Barrel Cactus">
+									<div class="product-image">
+										<img src="images/products/Golden_Barrel_Cactus/Golden_Barrel_Cactus.jpg" alt="Golden Barrel Cactus">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Golden Barrel Cactus</p>
+										</div>
+										<p class="product-price">₱ 400.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=9&amp;prod=indoor+plant+white+pot" class="product-link Pot/Planters" data-prod_id="9" data-prod_name="Indoor Plant White pot" data-prod_price="15.00" data-prod_popularity="14">
+								<div class="product" data-prod_id="9" data-prod_name="Indoor Plant White pot">
+									<div class="product-image">
+										<img src="images/products/Indoor_Plant_White_pot/Indoor_Plant_White_pot.jpg" alt="Indoor Plant White pot">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Indoor Plant White pot</p>
+										</div>
+										<p class="product-price">₱ 15.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=19&amp;prod=earth+star+indoor+plant-+3+variants+available" class="product-link Plant/Flowers" data-prod_id="19" data-prod_name="Earth Star Indoor Plant- 3 variants available" data-prod_price="350.00" data-prod_popularity="11">
+								<div class="product" data-prod_id="19" data-prod_name="Earth Star Indoor Plant- 3 variants available">
+									<div class="product-image">
+										<img src="images/products/Earth_Star_Indoor_Plant-_3_variants_available/Earth_Star_Indoor_Plant-_3_variants_available.jpg" alt="Earth Star Indoor Plant- 3 variants available">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Earth Star Indoor Plant- 3 variants available</p>
+										</div>
+										<p class="product-price">₱ 350.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=18&amp;prod=sanseviera+fern+-+pot+included" class="product-link Plant/Flowers" data-prod_id="18" data-prod_name="Sanseviera Fern - Pot Included" data-prod_price="300.00" data-prod_popularity="1">
+								<div class="product" data-prod_id="18" data-prod_name="Sanseviera Fern - Pot Included">
+									<div class="product-image">
+										<img src="images/products/Sanseviera_Fern_-_Pot_Included/Sanseviera_Fern_-_Pot_Included.jpg" alt="Sanseviera Fern - Pot Included">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Sanseviera Fern - Pot Included</p>
+										</div>
+										<p class="product-price">₱ 300.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=30&amp;prod=geometrical+semi-ceramic+pot" class="product-link Pot/Planters" data-prod_id="30" data-prod_name="Geometrical Semi-Ceramic Pot" data-prod_price="99.00" data-prod_popularity="1">
+								<div class="product" data-prod_id="30" data-prod_name="Geometrical Semi-Ceramic Pot">
+									<div class="product-image">
+										<img src="images/products/Geometrical_Semi-Ceramic_Pot/Geometrical_Semi-Ceramic_Pot.jpg" alt="Geometrical Semi-Ceramic Pot">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Geometrical Semi-Ceramic Pot</p>
+										</div>
+										<p class="product-price">₱ 99.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=35&amp;prod=vintage+inspired+ceramic+pot" class="product-link Pot/Planters" data-prod_id="35" data-prod_name="Vintage Inspired Ceramic Pot" data-prod_price="110.00" data-prod_popularity="1">
+								<div class="product" data-prod_id="35" data-prod_name="Vintage Inspired Ceramic Pot">
+									<div class="product-image">
+										<img src="images/products/Vintage_Inspired_Ceramic_Pot/Vintage_Inspired_Ceramic_Pot.jpg" alt="Vintage Inspired Ceramic Pot">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Vintage Inspired Ceramic Pot</p>
+										</div>
+										<p class="product-price">₱ 110.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=36&amp;prod=4+pcs+aesthetic+dish+ceramic+pot" class="product-link Pot/Planters" data-prod_id="36" data-prod_name="4 pcs Aesthetic Dish Ceramic Pot" data-prod_price="399.00" data-prod_popularity="1">
+								<div class="product" data-prod_id="36" data-prod_name="4 pcs Aesthetic Dish Ceramic Pot">
+									<div class="product-image">
+										<img src="images/products/4_pcs_Aesthetic_Dish_Ceramic_Pot/4_pcs_Aesthetic_Dish_Ceramic_Pot.jpg" alt="4 pcs Aesthetic Dish Ceramic Pot">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>4 pcs Aesthetic Dish Ceramic Pot</p>
+										</div>
+										<p class="product-price">₱ 399.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=41&amp;prod=air+plant+-+indoor+plant" class="product-link Plant/Flowers" data-prod_id="41" data-prod_name="Air Plant - Indoor Plant" data-prod_price="300.00" data-prod_popularity="1">
+								<div class="product" data-prod_id="41" data-prod_name="Air Plant - Indoor Plant">
+									<div class="product-image">
+										<img src="images/products/Air_Plant_-_Indoor_Plant/Air_Plant_-_Indoor_Plant.jpg" alt="Air Plant - Indoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Air Plant - Indoor Plant</p>
+										</div>
+										<p class="product-price">₱ 300.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=49&amp;prod=2+pcs+ceramic+pots+for+your+plants" class="product-link Pot/Planters" data-prod_id="49" data-prod_name="2 pcs Ceramic Pots for your plants" data-prod_price="250.00" data-prod_popularity="1">
+								<div class="product" data-prod_id="49" data-prod_name="2 pcs Ceramic Pots for your plants">
+									<div class="product-image">
+										<img src="images/products/2_pcs_Cermic_Pots_for_your_plants/2_pcs_Cermic_Pots_for_your_plants.jpg" alt="2 pcs Ceramic Pots for your plants">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>2 pcs Ceramic Pots for your plants</p>
+										</div>
+										<p class="product-price">₱ 250.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=57&amp;prod=christmas+sale+-+camp+fire+succulent" class="product-link Plant/Flowers" data-prod_id="57" data-prod_name="Christmas Sale - Camp Fire Succulent" data-prod_price="60.00" data-prod_popularity="1">
+								<div class="product" data-prod_id="57" data-prod_name="Christmas Sale - Camp Fire Succulent">
+									<div class="product-image">
+										<img src="images/products/Christmas_Sale_-_Camp_Fire_Succulent/Christmas_Sale_-_Camp_Fire_Succulent.jpg" alt="Christmas Sale - Camp Fire Succulent">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Christmas Sale - Camp Fire Succulent</p>
+										</div>
+										<p class="product-price">₱ 60.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=58&amp;prod=hawaiian+elf+or+dwarf+umbrella+tree+with+pot+(indoor+or+outdoor+plant)" class="product-link Plant/Flowers" data-prod_id="58" data-prod_name="Hawaiian Elf or Dwarf Umbrella tree with pot (Indoor or outdoor Plant)" data-prod_price="400.00" data-prod_popularity="1">
+								<div class="product" data-prod_id="58" data-prod_name="Hawaiian Elf or Dwarf Umbrella tree with pot (Indoor or outdoor Plant)">
+									<div class="product-image">
+										<img src="images/products/Hawaiian_Elf_or_Dwarf_Umbrella_tree_with_pot_(Indoor_or_outdoor_Plant)/Hawaiian_Elf_or_Dwarf_Umbrella_tree_with_pot_(Indoor_or_outdoor_Plant).jpg" alt="Hawaiian Elf or Dwarf Umbrella tree with pot (Indoor or outdoor Plant)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Hawaiian Elf or Dwarf Umbrella tree with pot (Indoor or outdoor Plant)</p>
+										</div>
+										<p class="product-price">₱ 400.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=59&amp;prod=fernwood+sanseviera+-+indoor+plant" class="product-link Plant/Flowers" data-prod_id="59" data-prod_name="Fernwood Sanseviera - Indoor Plant" data-prod_price="85.00" data-prod_popularity="1">
+								<div class="product" data-prod_id="59" data-prod_name="Fernwood Sanseviera - Indoor Plant">
+									<div class="product-image">
+										<img src="images/products/Fernwood_Sanseviera_-_Indoor_Plant/Fernwood_Sanseviera_-_Indoor_Plant.jpg" alt="Fernwood Sanseviera - Indoor Plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Fernwood Sanseviera - Indoor Plant</p>
+										</div>
+										<p class="product-price">₱ 85.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=34&amp;prod=christmas+plant+sale+-+haworthia+jade+star+succulent" class="product-link Plant/Flowers" data-prod_id="34" data-prod_name="Christmas Plant Sale - Haworthia Jade Star Succulent" data-prod_price="99.00" data-prod_popularity="0">
+								<div class="product" data-prod_id="34" data-prod_name="Christmas Plant Sale - Haworthia Jade Star Succulent">
+									<div class="product-image">
+										<img src="images/products/Christmas_Plant_Sale_-_Haworthia_Jade_Star_Succulent/Christmas_Plant_Sale_-_Haworthia_Jade_Star_Succulent.jpg" alt="Christmas Plant Sale - Haworthia Jade Star Succulent">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Christmas Plant Sale - Haworthia Jade Star Succulent</p>
+										</div>
+										<p class="product-price">₱ 99.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=37&amp;prod=haworthia+zebra+-+indoor+plant,+rare+succulent" class="product-link Plant/Flowers" data-prod_id="37" data-prod_name="Haworthia Zebra - Indoor Plant, Rare Succulent" data-prod_price="350.00" data-prod_popularity="0">
+								<div class="product" data-prod_id="37" data-prod_name="Haworthia Zebra - Indoor Plant, Rare Succulent">
+									<div class="product-image">
+										<img src="images/products/Haworthia_Zebra_-_Indoor_Plant,_Rare_Succulent/Haworthia_Zebra_-_Indoor_Plant,_Rare_Succulent.jpg" alt="Haworthia Zebra - Indoor Plant, Rare Succulent">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Haworthia Zebra - Indoor Plant, Rare Succulent</p>
+										</div>
+										<p class="product-price">₱ 350.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=38&amp;prod=dwarf+snake+plant+-+pot+and+soil+included" class="product-link Plant/Flowers" data-prod_id="38" data-prod_name="Dwarf Snake Plant - Pot and Soil Included" data-prod_price="300.00" data-prod_popularity="0">
+								<div class="product" data-prod_id="38" data-prod_name="Dwarf Snake Plant - Pot and Soil Included">
+									<div class="product-image">
+										<img src="images/products/Dwarf_Snake_Plant_-_Pot_and_Soil_Included/Dwarf_Snake_Plant_-_Pot_and_Soil_Included.jpg" alt="Dwarf Snake Plant - Pot and Soil Included">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Dwarf Snake Plant - Pot and Soil Included</p>
+										</div>
+										<p class="product-price">₱ 300.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=39&amp;prod=pink+round+desk+pots" class="product-link Pot/Planters" data-prod_id="39" data-prod_name="Pink Round Desk Pots" data-prod_price="45.00" data-prod_popularity="0">
+								<div class="product" data-prod_id="39" data-prod_name="Pink Round Desk Pots">
+									<div class="product-image">
+										<img src="images/products/Pink_Round_Desk_Pots/Pink_Round_Desk_Pots.jpg" alt="Pink Round Desk Pots">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Pink Round Desk Pots</p>
+										</div>
+										<p class="product-price">₱ 45.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=43&amp;prod=kalanchoe+tomentosa+(succulent+indoor+plant)" class="product-link Plant/Flowers" data-prod_id="43" data-prod_name="Kalanchoe Tomentosa (Succulent Indoor Plant)" data-prod_price="225.00" data-prod_popularity="0">
+								<div class="product" data-prod_id="43" data-prod_name="Kalanchoe Tomentosa (Succulent Indoor Plant)">
+									<div class="product-image">
+										<img src="images/products/Kalanchoe_Tomentosa_(Succulent_Indoor_Plant)/Kalanchoe_Tomentosa_(Succulent_Indoor_Plant).jpg" alt="Kalanchoe Tomentosa (Succulent Indoor Plant)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Kalanchoe Tomentosa (Succulent Indoor Plant)</p>
+										</div>
+										<p class="product-price">₱ 225.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=44&amp;prod=earth+star+-+for+office+or+room+indoor+plant" class="product-link Plant/Flowers" data-prod_id="44" data-prod_name="Earth Star - for Office or Room indoor plant" data-prod_price="360.00" data-prod_popularity="0">
+								<div class="product" data-prod_id="44" data-prod_name="Earth Star - for Office or Room indoor plant">
+									<div class="product-image">
+										<img src="images/products/Earth_Star_-_for_Office_or_Room_indoor_plant/Earth_Star_-_for_Office_or_Room_indoor_plant.jpg" alt="Earth Star - for Office or Room indoor plant">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Earth Star - for Office or Room indoor plant</p>
+										</div>
+										<p class="product-price">₱ 360.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=45&amp;prod=earth+star+-+big+size" class="product-link Plant/Flowers" data-prod_id="45" data-prod_name="Earth Star - Big Size" data-prod_price="700.00" data-prod_popularity="0">
+								<div class="product" data-prod_id="45" data-prod_name="Earth Star - Big Size">
+									<div class="product-image">
+										<img src="images/products/Earth_Star_-_Big_Size/Earth_Star_-_Big_Size.jpg" alt="Earth Star - Big Size">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Earth Star - Big Size</p>
+										</div>
+										<p class="product-price">₱ 700.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=46&amp;prod=black+prince+succulent+-+indoor+plant+for+good+ambiance" class="product-link Plant/Flowers" data-prod_id="46" data-prod_name="Black Prince Succulent - Indoor Plant for Good ambiance" data-prod_price="180.00" data-prod_popularity="0">
+								<div class="product" data-prod_id="46" data-prod_name="Black Prince Succulent - Indoor Plant for Good ambiance">
+									<div class="product-image">
+										<img src="images/products/Black_Prince_Succulent_-_Indoor_Plant_for_Good_ambiance/Black_Prince_Succulent_-_Indoor_Plant_for_Good_ambiance.jpg" alt="Black Prince Succulent - Indoor Plant for Good ambiance">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Black Prince Succulent - Indoor Plant for Good ambiance</p>
+										</div>
+										<p class="product-price">₱ 180.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=48&amp;prod=haworthia+succulent+-+indoor+plant+for+instragramable+inspired+room" class="product-link Plant/Flowers" data-prod_id="48" data-prod_name="Haworthia Succulent - Indoor Plant for Instragramable inspired room" data-prod_price="400.00" data-prod_popularity="0">
+								<div class="product" data-prod_id="48" data-prod_name="Haworthia Succulent - Indoor Plant for Instragramable inspired room">
+									<div class="product-image">
+										<img src="images/products/Haworthia_Succulent_-_Indoor_Plant_for_Instragramable_inspired_room/Haworthia_Succulent_-_Indoor_Plant_for_Instragramable_inspired_room.jpg" alt="Haworthia Succulent - Indoor Plant for Instragramable inspired room">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Haworthia Succulent - Indoor Plant for Instragramable inspired room</p>
+										</div>
+										<p class="product-price">₱ 400.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=51&amp;prod=blue+round+pots+for+desk+plants" class="product-link Pot/Planters" data-prod_id="51" data-prod_name="Blue Round Pots for Desk Plants" data-prod_price="45.00" data-prod_popularity="0">
+								<div class="product" data-prod_id="51" data-prod_name="Blue Round Pots for Desk Plants">
+									<div class="product-image">
+										<img src="images/products/Blue_Round_Pots_for_Desk_Plants/Blue_Round_Pots_for_Desk_Plants.jpg" alt="Blue Round Pots for Desk Plants">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Blue Round Pots for Desk Plants</p>
+										</div>
+										<p class="product-price">₱ 45.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=52&amp;prod=white+square+corrugated+desk+pot+(fast+draining)" class="product-link Pot/Planters" data-prod_id="52" data-prod_name="White Square Corrugated Desk Pot (Fast Draining)" data-prod_price="45.00" data-prod_popularity="0">
+								<div class="product" data-prod_id="52" data-prod_name="White Square Corrugated Desk Pot (Fast Draining)">
+									<div class="product-image">
+										<img src="images/products/White_Square_Corrugated_Desk_Pot_(Fast_Draining)/White_Square_Corrugated_Desk_Pot_(Fast_Draining).jpg" alt="White Square Corrugated Desk Pot (Fast Draining)">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>White Square Corrugated Desk Pot (Fast Draining)</p>
+										</div>
+										<p class="product-price">₱ 45.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+							<a href="product.html?ID=60&amp;prod=aesthetic+ceramic+mint+green+pot" class="product-link Pot/Planters" data-prod_id="60" data-prod_name="Aesthetic Ceramic Mint Green Pot" data-prod_price="85.00" data-prod_popularity="0">
+								<div class="product" data-prod_id="60" data-prod_name="Aesthetic Ceramic Mint Green Pot">
+									<div class="product-image">
+										<img src="images/products/Aesthetic_Ceramic_Mint_Green_Pot/Aesthetic_Ceramic_Mint_Green_Pot.jpg" alt="Aesthetic Ceramic Mint Green Pot">
+									</div>
+									<div class="product-info">
+										<div class="product-name">
+											<p>Aesthetic Ceramic Mint Green Pot</p>
+										</div>
+										<p class="product-price">₱ 85.00</p>
+										<p class="rating">
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star-o"></i>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div id="scroll-top" style="display: none;">
+					<span id="arrow-up">❮</span>
+				</div>
+			</div>
+			<footer>
+				<div class="row">
+					<div id="product-categories" class="column">
+						<h3>Product Categories</h3>
+						<p><a href="shop.html#new-release" class="category-footer">New Release</a></p>
+						<p><a href="shop.html#all" class="category-footer">All Products</a></p>
+						<p><a href="shop.html#flowers-plants" class="category-footer">Flowers &amp; Plants</a></p>
+						<p><a href="shop.html#pots-planters" class="category-footer">Pots &amp; Planters</a></p>
+					</div>
+					<div id="sns" class="column">
+						<ul>
+							<li>
+								<a class="shop-links" href="https://www.facebook.com/Dplant8" target="_blank">
+									<i class="fa fa-facebook-official fa-3x"></i>
+								</a>
+							</li>
+							<li>
+								<a class="shop-links" href="https://shopee.ph/plant8" target="_blank">
+									<img src="images/content/shopee.png" alt="Shopee">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div id="contact-footer" class="column">
+						<h3>Contact Us</h3>
+						<a id="message-us" href="about.html?loc=message-us">Message Us</a>
+						<p><label>Email:</label><a id="email" href="mailto:daplant8@gmail.com">daplant8@gmail.com</a></p>
+						<p>Quezon City, National Capital Region, Philippines 1100</p>
+					</div>
+				</div>
+				<div class="row">
+					<p>© 2021, <a href="index.html">Plant 8</a></p>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			$('body').click(function(event) {
+				if(!$(event.target).is("#selected-custom"))
+					hideCustomSelect();
+
+				if(!$(event.target).is("#user-settings") || !$(event.target).is("#user-icon") || !$(event.target).is(".fa-user-circle-o"))
+					$('#user-settings').removeClass('active');
+			});
+
+			$(document).on('click', '.category-footer', function(event) {
+				$('.category-tab').removeClass('current-category');
+				event.preventDefault();
+
+				let category = $(this).text();
+				checkCurrentCategory(category, 1);
+			});
+
+			$(document).ready(function() {
+				$('.product-action').click(function(event) {
+					event.preventDefault();
+					event.stopPropagation();
+				}).find('.add-cart, .view-prod').click(function() {
+					if($(this).hasClass('add-cart')) {
+						let custID = "1"
+						singleAddtoCart(custID, $(this).attr('data-Prod_ID'));
+					} else {
+						window.location = $(this).attr('data-Prod_Location');
+					}
+					return false;
+				});
+			});
+
+			// activate sticky header when page is scrolled
+			window.onscroll = function() {
+				activateSticky();
+			}
+
+			// remove shadow style if window width is lower than 901px
+			window.onload = function() {
+				activateSticky();
+				window.scrollTo(0, 0);
+
+				let hashLocation = (location.href.split('#')[1] || '');
+				if(hashLocation == '') {
+					window.location.hash = 'all';
+					hashLocation = 'all';
+				}
+
+				let queryString = (location.href.split('?')[1] || '');
+				if(queryString != '') {
+					let productName = (queryString.split('=')[1] || '');
+					if(productName != '') {
+						productName = productName.replace(/\+/g, ' ')
+						$('#product-search').val(productName);
+						searchProduct(productName);
+					}
+				}
+
+				checkCurrentCategory(hashLocation, 2);
+				$('#popular').click();
+			}
+		</script>
+	</body>
+</html>

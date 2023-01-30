@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!-- Developers: Dela Cruz, Ysabel S. -->
+<!--             Villar, Ron-Arvil B. -->
+
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Plant 8 | Checkout</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/content/favicon.ico">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Rancho&amp;family=Merriweather+Sans:wght@300;400&amp;family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet">
+		<link href="css/page.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/page-style.js"></script>
+	</head>
+	<body>
+		<div id="body-wrapper">
+			<div id="promo-banner">
+				<p id="promo-content">WE ONLY ACCEPT ORDERS IN METRO MANILA<a href="shop.html">Shop Now</a></p>
+			</div>
+			<header id="header-menu">
+				<div class="bg"></div>
+				<div id="left-item">
+					<span id="nav-icon" style="color: white;">&#9776;</span>
+					<a href="index.html"><img id="logo-container" src="images/content/logo2.png" alt="Plant 8"></a>
+					<a id="logo-name" class="title-shadow" href="index.html">Plant 8</a>
+				</div>
+				<div id="center-item" class="sidebar small-side left-origin">
+					<span id="left-close" class="close-icon">×</span>
+					<ul id="page-navigation" class="navigation">
+						<li><a href="index.html" class="nav-link shadow">HOME</a></li>
+						<li><a href="shop.html" class="nav-link shadow">SHOP</a></li>
+						<li><a href="about.html" class="nav-link shadow">ABOUT US</a></li>
+					</ul>
+				</div>
+				<div id="right-item">
+					<div id="right-sidebar" class="sidebar small-side right-origin">
+						<span id="right-close" class="close-icon">×</span>
+						<ul id="user-settings" class="navigation">
+							<a href="orders.html"><li id="history">Orders</li></a>
+							<a href="settings.html"><li id="settings">Settings</li></a>
+							<a href="#"><li id="log-out">Log Out</li></a>
+						</ul>
+					</div>
+					<div id="user-icon" class="icon">
+						<img src="images/users/1.jpg" alt="Ysabel Dela Cruz">
+					</div>
+					<div>
+						<img id="cart-icon" class="icon" src="images/cart.png" data-toggle="modal" data-target="#cart-modal" alt="Cart">
+						<span id="cart-count">2</span>
+					</div>
+				</div>
+				<div id="cart-modal" class="modal" style="display: none;" aria-hidden="true">
+					<div class="modal-content">
+						<div class="modal-body">
+							<span class="X" data-dismiss="modal">&times;</span>
+							<h2>Your Cart</h2>
+							<hr class="horizontal">
+							<div id="cart-empty" style="display: none;">
+							<p>Oops. Looks like your cart is empty.</p>
+							<button id="shop-redirect" class="redirect">Shop Now</button>
+						</div>
+						<div id="cart-items" style="display: block;">
+							<div class="modal-field">
+								<div>
+									<input type="checkbox" id="select-all" class="ord-checkbox">
+									<span class="checkmark cart-checkmark"></span>
+								</div>
+								<div>
+									<button id="delete-cart" class="btn-red btn-disabled" data-cust_id="1"><i class="fa fa-trash"></i>Delete</button>
+								</div>
+							</div>
+							<hr class="horizontal">
+							<div id="ord-all">
+								<div class="modal-field">
+									<div class="ord-product">
+										<input type="checkbox" class="ord-checkbox" data-cart_id="442">
+										<span class="checkmark cart-checkmark"></span>
+										<div class="ord-image">
+											<img src="images/products/Broadleaf_Palm_Lily_with_Pot_-_Indoor_Plant/Broadleaf_Palm_Lily_with_Pot_-_Indoor_Plant.jpg">
+										</div>
+										<div class="ord-summary">
+											<div class="ord-desc">
+												<p class="ord-name">Broadleaf Palm Lily with Pot - Indoor Plant</p>
+												<p class="ord-price">₱ 270.00</p>
+												<div class="qty-set">
+													<div class="qty-minus unselectable" data-cust_id="1" data-cart_id="442" data-prod_id="3" data-prod_price="270.00">-</div>
+													<div class="qty-value">1</div>
+													<div class="qty-add unselectable" data-maxqty="983" data-cart_id="442" data-prod_id="3" data-prod_price="270.00">+</div>
+												</div>
+												<div class="qty-avail">983 pieces left</div>
+											</div>
+											<p class="ord-sub-price">₱ 270.00</p>
+										</div>
+									</div>
+									<hr class="horizontal">
+								</div>
+								<div class="modal-field">
+									<div class="ord-product">
+										<input type="checkbox" class="ord-checkbox" data-cart_id="441">
+										<span class="checkmark cart-checkmark"></span>
+										<div class="ord-image">
+											<img src="images/products/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant.jpg">
+										</div>
+										<div class="ord-summary">
+											<div class="ord-desc">
+												<p class="ord-name">San Flores Plant with pot (Indoor or Outdoor) Accent Plant</p>
+												<p class="ord-price">₱ 350.00</p>
+												<div class="qty-set">
+													<div class="qty-minus unselectable" data-cust_id="1" data-cart_id="441" data-prod_id="1" data-prod_price="350.00">-</div>
+													<div class="qty-value">1</div>
+													<div class="qty-add unselectable" data-maxqty="941" data-cart_id="441" data-prod_id="1" data-prod_price="350.00">+</div>
+												</div>
+												<div class="qty-avail">941 pieces left</div>
+											</div>
+											<p class="ord-sub-price">₱ 350.00</p>
+										</div>
+									</div>
+									<hr class="horizontal">
+								</div>
+							</div>
+							<div id="modal-total" class="modal-field">
+								<p><span id="ord-total-qty">2 items</span>, Total: ₱ <span id="ord-total-price">620.00</span></p>
+							</div>
+							<div id="checkout-field" class="modal-field">
+								<button id="checkout-cart" class="btn-green btn-disabled"><i class="fa fa-shopping-basket"></i>Checkout</button>
+							</div>
+							<h4>You may like:</h4>
+							<div id="cart-recommend">
+								<a href="product.html?ID=2&amp;prod=sea+orache (indoor or outdoor plant)">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/Sea_Orache_(Indoor_or_Outdoor_Plant)/Sea_Orache_(Indoor_or_Outdoor_Plant).jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>Sea Orache (Indoor or Outdoor Plant)</p>
+											</div>
+											<p class="recom-price">₱ 250.00</p>
+										</div>
+									</div>
+								</a>
+								<a href="product.html?ID=1&amp;prod=san+flores plant with pot (indoor or outdoor) accent plant">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant.jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>San Flores Plant with pot (Indoor or Outdoor) Accent Plant</p>
+											</div>
+											<p class="recom-price">₱ 350.00</p>
+										</div>
+									</div>
+								</a>
+								<a href="product.html?ID=49&amp;prod=2+pcs ceramic pots for your plants">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/2_pcs_Cermic_Pots_for_your_plants/2_pcs_Cermic_Pots_for_your_plants.jpg">
+										</div>
+										<div class="recom-info">
+											<div class="recom-name">
+												<p>2 pcs Ceramic Pots for your plants</p>
+											</div>
+											<p class="recom-price">₱ 250.00</p>
+										</div>
+									</div>
+								</a>
+								<a href="product.html?ID=59&amp;prod=fernwood+sanseviera - indoor plant">
+									<div class="recom-display">
+										<div class="recom-image">
+											<img src="images/products/Fernwood_Sanseviera_-_Indoor_Plant/Fernwood_Sanseviera_-_Indoor_Plant.jpg"></div>
+											<div class="recom-info">
+												<div class="recom-name">
+													<p>Fernwood Sanseviera - Indoor Plant</p>
+												</div>
+												<p class="recom-price">₱ 85.00</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="load-modal" class="modal" data-backdrop="static" data-keyboard="false">
+					<div class="loader"></div>
+				</div>
+			</header>
+			<div id="main" class="no-banner">
+				<div id="checkout" class="inner">
+					<h2>CHECKOUT</h2>
+					<div id="deli-details">
+						<div id="mail-design"></div>
+						<p class="checkout-titles"><i class="fa fa-map-marker fa-lg"></i>Delivery Address</p>
+						<div class="deli-choice">
+							<input type="radio" name="deli-choose" id="deli-1" class="deli-radio" value="1">
+							<label class="deli-label" for="deli-1">
+								<span>Ysabel Dela Cruz</span>
+								<span>09123456789</span>
+								<span>Adb Avenue Corner Julia Vargas Avenue Ortigas Center, Mandaluyong 1605</span>
+							</label>
+						</div>
+					</div>
+					<div id="checkout-items">
+						<p class="checkout-titles"><i class="fa fa-shopping-basket fa-lg"></i>Checkout Items</p>
+						<div class="checkout-label">
+							<div class="checkout-detail">
+								<div class="checkout-qty">Quantity</div>
+								<div class="checkout-sub-price">Total</div>
+								<div class="checkout-price">Unit</div>
+							</div>
+						</div>
+						<div class="checkout-product" data-cart_id="442">
+							<div class="checkout-image">
+								<img src="images/products/Broadleaf_Palm_Lily_with_Pot_-_Indoor_Plant/Broadleaf_Palm_Lily_with_Pot_-_Indoor_Plant.jpg" alt="Broadleaf Palm Lily with Pot - Indoor Plant">
+							</div>
+							<div class="checkout-detail">
+								<div class="checkout-name">Broadleaf Palm Lily with Pot - Indoor Plant</div>
+								<div class="checkout-price">₱ 270.00</div>
+								<div class="checkout-qty">X1</div>
+								<div class="checkout-sub-price">₱ <span>270.00</span></div>
+							</div>
+						</div>
+						<div class="checkout-product" data-cart_id="441">
+							<div class="checkout-image">
+								<img src="images/products/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant/San_Flores_Plant_with_pot_(Indoor_or_Outdoor)_Accent_Plant.jpg" alt="San Flores Plant with pot (Indoor or Outdoor) Accent Plant">
+							</div>
+							<div class="checkout-detail">
+								<div class="checkout-name">San Flores Plant with pot (Indoor or Outdoor) Accent Plant</div>
+								<div class="checkout-price">₱ 350.00</div>
+								<div class="checkout-qty">X1</div>
+								<div class="checkout-sub-price">₱ <span>350.00</span></div>
+							</div>
+						</div>
+						<hr class="horizontal">
+						<div class="checkout-end">
+							<div>
+								<div>Total</div>
+								<div>₱ <span id="checkout-total">620.00</span></div>
+							</div>
+						</div>
+						<span id="checkout-notice">Shipping fee will be shouldered by the buyer.</span>
+					</div>
+					<div id="payment-op">
+						<p class="checkout-titles"><i class="fa fa-university fa-lg"></i>Payment Options</p>
+						<div class="payment-container">
+							<input type="radio" name="payOp" value="1">
+							<button class="payment-acc">VISA</button>
+						</div>
+						<div class="payment-container">
+							<div class="payment-detail">
+								<div class="payment-area">
+									<div class="payment-row">
+										<span>Account Name:</span><span>Ysabel Dela Cruz</span>
+									</div>
+									<div class="payment-row">
+										<span>Account Number:</span><span>1230456789</span>
+									</div>
+									<div class="payment-row payment-qr">
+										<span>QR Code:</span>
+										<div>
+											<div class="qr-container">
+												<img src="images/PayOptions/cardQR.png" alt="VISA">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="payment-container">
+							<input type="radio" name="payOp" value="2">
+							<button class="payment-acc">GCASH</button>
+						</div>
+						<div class="payment-container">
+							<div class="payment-detail">
+								<div class="payment-area">
+									<div class="payment-row">
+										<span>Account Name:</span><span>Ron-Arvil Villar</span>
+									</div>
+									<div class="payment-row">
+										<span>Account Number:</span><span>09999999999</span>
+									</div>
+									<div class="payment-row payment-qr">
+										<span>QR Code:</span>
+										<div>
+											<div class="qr-container">
+												<img src="images/PayOptions/gcashQR.jpg" alt="GCASH">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="payment-container">
+							<input type="radio" name="payOp" value="3">
+							<button class="payment-acc">PAYMAYA</button>
+						</div>
+						<div class="payment-container">
+							<div class="payment-detail">
+								<div class="payment-area">
+									<div class="payment-row">
+										<span>Account Name:</span><span>Ron-Arvil Villar</span>
+									</div>
+									<div class="payment-row">
+										<span>Account Number:</span><span>09999999999</span>
+									</div>
+									<div class="payment-row payment-qr">
+										<span>QR Code:</span>
+										<div>
+											<div class="qr-container">
+												<img src="images/PayOptions/PayQR.jpg" alt="PAYMAYA">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="checkout-btns">
+						<button class="btn-default checkout-back">Cancel</button>
+						<button id="add-order" class="btn-green" data-cust_id="1" data-proditems="2" data-totitems="2" data-totprice="620" data-payop="COD" data-prod_id="3,1," data-prod_qty="1,1," data-prod_price="270.00,350.00," data-cart_id="442,441,">
+							<i class="fa fa-shopping-basket"></i>Checkout
+						</button>
+					</div>
+				</div>
+				<div id="scroll-top">
+					<span id="arrow-up">❮</span>
+				</div>
+			</div>
+			<footer>
+				<div class="row">
+					<div id="product-categories" class="column">
+						<h3>Product Categories</h3>
+						<p><a href="shop.html#new-release" class="category-footer">New Release</a></p>
+						<p><a href="shop.html#all" class="category-footer">All Products</a></p>
+						<p><a href="shop.html#flowers-plants" class="category-footer">Flowers &amp; Plants</a></p>
+						<p><a href="shop.html#pots-planters" class="category-footer">Pots &amp; Planters</a></p>
+					</div>
+					<div id="sns" class="column">
+						<ul>
+							<li>
+								<a class="shop-links" href="https://www.facebook.com/Dplant8" target="_blank">
+									<i class="fa fa-facebook-official fa-3x"></i>
+								</a>
+							</li>
+							<li>
+								<a class="shop-links" href="https://shopee.ph/plant8" target="_blank">
+									<img src="images/content/shopee.png" alt="Shopee">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div id="contact-footer" class="column">
+						<h3>Contact Us</h3>
+						<a id="message-us" href="about.html?loc=message-us">Message Us</a>
+						<p><label>Email:</label><a id="email" href="mailto:daplant8@gmail.com">daplant8@gmail.com</a></p>
+						<p>Quezon City, National Capital Region, Philippines 1100</p>
+					</div>
+				</div>
+				<div class="row">
+					<p>© 2021, <a href="index.html">Plant 8</a></p>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			$(document).on('click', '.payment-acc', function() {
+				$(this).toggleClass('payment-active');
+
+				let panel = this.parentElement.nextElementSibling.children[0];
+
+				if(panel.style.maxHeight)
+					panel.style.maxHeight = null;
+				else
+					panel.style.maxHeight = (panel.scrollHeight + 38) + 'px';
+			});
+
+			// activate sticky header when page is scrolled
+			window.onscroll = function() {
+				activateSticky();
+			}
+
+			// remove shadow style if window width is lower than 901px
+			window.onload = function() {
+				activateSticky();
+			}
+		</script>
+	</body>
+</html>
